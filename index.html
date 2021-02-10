@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title></title>
+        <script>
+            function setItem(obj)
+            {
+                document.getElementById('item').value = obj.value;
+            }
+            function getCashTable()
+            {
+
+            }
+        </script>
+    </head>
+    <body>
+        <div>
+            <form id="cashTable" action="#" method="POST">
+                <span>CashNote</span><br>
+                <table>
+                    
+                    <tr>
+                        <td>類別</td>
+                        <td>金額</td>
+                    </tr>
+                    <tr>
+                        <td><input id="item" type="text" value=""/></td>
+                        <td><input id="cash" type="text" value=""/></td>
+                        <td><input type="button" value="記帳"/></td>
+                    </tr>
+                </table>
+            </form>
+            <br>
+            <span>預設類別：</span>
+            <table>
+                <tr>
+                    <td><input type="button" onclick="setItem(this)" value="早餐"/></td>
+                    <td><input type="button" onclick="setItem(this)" value="午餐"/></td>
+                    <td><input type="button" onclick="setItem(this)" value="晚餐"/></td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <td>日期</td>
+                        <td>項目</td>
+                        <td>金額</td>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+                <tfoot>
+
+                </tfoot>
+                
+            </table>
+        </div>
+    </body>
+    
+</html>
