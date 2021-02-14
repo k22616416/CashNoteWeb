@@ -1,3 +1,22 @@
 .webTitle{
     font-size: xx-large;
 }
+
+.leftDiv{
+}
+
+.rightDiv{
+}
+
+.mainTable{
+    margin: 0 auto;
+}
+
+.cashListTable{
+    border: 1px solid #000;     /*邊框*/
+    border-radius: 3px;         /*邊框圓角*/
+    
+
+}
+
+
