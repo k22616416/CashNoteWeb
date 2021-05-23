@@ -1,5 +1,7 @@
+<!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="style.css">
         <title>CashNoteWEB</title>
         <script>
@@ -16,7 +18,7 @@
                 var form =document.getElementById("cashTable"); 
                 var timeLine = document.createElement('input');
                 timeLine.setAttribute('type','text');
-                timeLine.setAttribute('id','timeLine');
+                timeLine.setAttribute('name','timeLine');
                 timeLine.setAttribute('value',new Date());
                 form.append(timeLine);
                 form.submit();
@@ -35,10 +37,12 @@
                                 <tr>
                                     <td>類別</td>
                                     <td>金額</td>
+                                    <td>備註</td>
                                 </tr>
                                 <tr>
-                                    <td><input id="item" type="text" value=""/></td>
-                                    <td><input id="cash" type="text" value=""/></td>
+                                    <td><input name="item" type="text" value=""/></td>
+                                    <td><input name="cash" type="text" value=""/></td>
+                                    <td><input name="ps" type="text" value=""/></td>
                                     <td><input type="button" onclick="submitForm()" value="記帳"/></td>
                                 </tr>
                             </table>
